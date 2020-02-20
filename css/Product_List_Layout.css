@@ -1,0 +1,209 @@
+/** CONTATORE PRODOTTI **/
+.product-counter{
+    font-family: "Roboto",sans-serif;
+    font-size: 13px;
+    line-height: 40px;
+    font-weight: 400;
+    float: right;
+    text-transform: none;
+}
+
+/** LISTA PRODOTTI **/
+#product_list{
+    list-style-type: none;
+}
+
+.base-product{
+    margin: 5px 0 15px 0;
+    padding: 0 10px;
+}
+
+.product-container{
+    position: relative;
+    background-color: white;
+    box-shadow: 9px 10px 5px #c7c7c7;
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.product-image-container{
+    padding: 25px;
+}
+
+.product-image-container sup{
+    line-height: 20px;
+    font-size: 0.6875em;
+    background-color: #f3515c;
+}
+
+.product-image-container img{
+    max-height: 118px;
+}
+
+.lista-carrello{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: -20px;
+    width: 44px; 
+    height: 44px;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.lista-carrello a{
+    display: block;
+    line-height: 24px;
+    padding: 10px 1px 10px 10px;
+    background-color: #007ad1;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.add-to-cart{
+    visibility: hidden;
+}
+
+.product-name{
+    padding: 12px 5%;
+    text-align: center;
+    Text-transform: capitalize;
+    border-top: solid 1px #eaeaea;
+    border-bottom: solid 1px #eaeaea;
+    margin: 0;
+    overflow: hidden;
+    line-height: 19px;
+    height: 18.4px;
+}
+
+.product-bottom{
+    padding: 12px 6% 20px 6%;
+    text-align: center;
+}
+
+.product-price{
+    color: #3d3d3d;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product-container .btn{
+    padding: 10px 15px 10px 15px;
+    font-size: 17px;
+    color: white;
+    background-color: #007ad1;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/** SELETTORI **/
+
+.product-container:hover{
+    opacity: 1;
+}
+
+.product-container:hover .lista-carrello{
+    visibility: visible;
+    opacity: 1;
+    right: 0px;
+}
+
+.lista-carrello:hover{
+    width: 80%;
+}
+
+.lista-carrello:hover .add-to-cart{
+    visibility: visible;
+    transition-delay: 0.2s;
+}
+
+.add-NChecked::before{
+    content: url('./../css/img/cart_list_icon_1.png');
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 1px;
+    visibility: visible;
+}
+
+.add-YChecked::before{
+    content: url('./../css/img/cart_list_icon_2.png');
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 1px;
+    visibility: visible;
+}
+
+/** MEDIA RULES **/
+
+@media screen and (max-width: 1300px){
+    
+    .lista-carrello a{
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 1185px){
+    
+    .six-col .column-layout{
+        width: 20%;
+    }
+    
+    .lista-carrello a{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1085px){
+    
+    .six-col .column-layout{
+        width: 25%;
+    }
+    
+}
+
+@media screen and (max-width: 1024px){  /** RENDO SEMPRE VISIBILE IL PULSANTE PER AGGIUNGERE AL CARRELLO DA TABLET E DA SMARTPHONE **/
+    
+    .lista-carrello{
+        visibility: visible;
+        opacity: 1;
+        width: 80%;
+        right: 0;
+    }
+    
+    .lista-carrello .add-to-cart{
+        visibility: visible;
+    }
+    
+}
+
+@media screen and (max-width: 900px){
+    
+    .six-col .column-layout{
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width: 675px){
+    
+    .six-col .column-layout{
+        width: 50%;
+    }
+    
+    .lista-carrello a{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 535px){
+    
+    .six-col .column-layout{
+        width: 100%;
+    }
+}

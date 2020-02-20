@@ -1,0 +1,68 @@
+#login-container .column-layout{
+    padding: 0 1%;
+    width: 48%;
+}
+
+#login-container .two-col{
+    min-height: 380px;
+}
+
+#login-container .legal-privacy{
+    margin-bottom: 31px;
+}
+
+#login-container .sub_btn{
+    line-height: 32px;
+}
+
+#login-container .form-control{
+    width: 80%;
+}
+
+#Submit_Crea{
+    background-color: #fe9702;
+}
+
+#Submit_Login{
+    background-color: #43b754;
+}
+
+#login-container .two-col .sub_btn img{
+    padding-right: 10px;
+}
+
+.sub_btn .button_icon{
+    display: block;
+    padding-left: 0;
+    
+    float: none;
+    margin: 0;
+    color: white;
+}
+
+.sub_btn .button_icon::before{
+    width: 24px;
+    height: 24px;
+    float: left;
+    padding: 0 8px;
+}
+
+.sub_btn #create_element::before{
+    content: url(./../css/img/User.png);
+}
+
+.sub_btn #login_element::before{
+    content: url(./../css/img/Lock.png);
+}
+
+@media screen and (max-width: 639px){
+    
+    #login-container .two-col{
+        min-height: 640px;
+    }
+    
+    #login-container .column-layout{
+        padding: 0 1%;
+        width: 98%;
+    }
+}

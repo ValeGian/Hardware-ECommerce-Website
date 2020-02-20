@@ -1,0 +1,115 @@
+.pagination_sort_bar_container{
+        display: inline-block;
+        margin: 15px 0;
+}
+
+.pagination_bar{
+    float: left;
+    list-style: none;
+}
+
+.pagination_bar li{
+    float: left;
+    cursor: default;
+}
+
+.pagination_bar li a{
+    text-decoration: none;
+    color: #5d5d5d;
+}
+
+.pagination_bar li a span{
+    cursor: pointer;
+}
+
+.pagination_bar li span{
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    font-size: 0.95em;
+    text-align: center;
+    display: block;
+    background-color: white;
+    border: 1px solid #c7c7c7;
+    margin-left: -1px; /*PER EVITARE DI AVERE UN DOPPIO BORDO TRA DUE li*/ 
+}
+
+#current-Page span{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.page_product_count{
+    font-style: italic;
+    color: #5d5d5d;
+    float: left;
+    line-height: 45px;
+    margin-left: 15px;
+}
+/** BARRA DI PAGINAZIONE PRODOTTI **/
+.pagination_sort_bar_container{
+        display: inline-block;
+        margin: 15px 0;
+}
+
+.pagination_bar{
+    float: left;
+    list-style: none;
+}
+
+.pagination_bar li{
+    float: left;
+    cursor: default;
+}
+
+.pagination_bar li a{
+    text-decoration: none;
+    color: #5d5d5d;
+}
+
+.pagination_bar li a span{
+    cursor: pointer;
+}
+
+.pagination_bar li span{
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    font-size: 0.95em;
+    text-align: center;
+    display: block;
+    background-color: white;
+    border: 1px solid #c7c7c7;
+    margin-left: -1px; /*PER EVITARE DI AVERE UN DOPPIO BORDO TRA DUE li*/ 
+}
+
+#current-Page span{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.page_product_count{
+    font-style: italic;
+    color: #5d5d5d;
+    float: left;
+    line-height: 45px;
+    margin-left: 15px;
+}
+
+/** SELETTORI **/
+.pagination_bar::before{
+    content: '';
+    height: 33px;
+    float: left;
+    display: block;
+}
+
+.pagination_bar li:first-child span{
+    border-radius: 5px 0 0 5px;
+}
+
+.pagination_bar li:last-child span{
+    border-radius: 0 5px 5px 0;
+}

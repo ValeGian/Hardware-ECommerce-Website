@@ -1,0 +1,145 @@
+.table{
+    border: 1px solid #c7c7c7;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    background-color: #f6f7f9;
+}
+
+.table td{
+    padding: 10px 13px;
+    border: 1px solid #c7c7c7;
+}
+
+.table thead th{
+    text-align: center;
+    border: 1px solid #c7c7c7;
+    padding: 10px;
+}
+
+.table tfoot td{
+    text-align: right;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+.table tfoot td:last-child{
+    background-color: white;
+}
+
+.table tbody{
+    background-color: white;
+}
+
+.table tbody td{
+    text-align: center;
+}
+
+.table a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.table p, .table .modello{
+    text-transform: capitalize;
+    
+}
+
+.table .prezzo{
+    font-weight: bold;
+    width: 120px;
+}
+
+.table .quantita, .table .delete{
+    width: 53px;
+}
+
+.table .quantita p{
+    width: 50px;
+    border: 1px solid #c7c7c7;
+}
+
+.table .quantita .ajaxCartModifiers{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table .quantita .ajaxCartModifiers:last-child{
+    margin-left: 20px;
+}
+
+.delete-icon{
+    height: 24px;
+    width: 24px;
+}
+
+#acquista{
+    background-color: #43b754;
+    text-decoration: none;
+    float: right;
+}
+
+#mod_dati{
+    background-color: #007ad1;
+    text-decoration: none;
+}
+
+#mod_user{
+    background-color: #ad2222;
+}
+
+.dati{
+    width: 45%;
+}
+
+/** SUMMARY CARRELLO **/
+#cart_summary .immagine{
+    width: 90px;
+    height: 90px;
+}
+
+#cart_summary .immagine img{
+    width: 90px;
+    height: 90px;
+}
+
+/** SUMMARY ACQUISTO **/
+#purchase_summary .immagine{
+    width: 135px;
+    height: 135px;
+}
+
+#purchase_summary .immagine img{
+    width: 135px;
+    height: 135px;
+}
+
+/** MESSAGGIO PER UTENTI DA SMARTPHONE **/
+#phone-message {
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    border: 10px solid #f1f1f1;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+    
+    /** NON VISIBILE SE LO SCHERMO è SUFFICIENTEMENTE AMPIO **/
+    visibility: hidden;
+}
+
+@media screen and (max-width: 600px){
+    
+    #phone-message{
+        visibility: visible;
+    }
+}
+
+

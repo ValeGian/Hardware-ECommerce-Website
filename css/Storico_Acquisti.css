@@ -1,0 +1,91 @@
+.box{
+    padding: 0;
+}
+
+p{
+    margin: 0;
+}
+
+.ordine-header{
+    background-color: #f6f6f6;
+    padding: 14px;
+    border-bottom: 1px solid #c7c7c7;
+    border-radius: 4px 4px 0 0;
+}
+
+.ordine-header p{
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.ordine-header .open{
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+}
+
+.three-col .open{
+    width: 10%;
+}
+
+.seven-col .open{
+    width: 3%;
+}
+
+.ordine-header .sold_flag{
+    float: left;
+}
+
+.three-col .sold_flag{
+    width: 5%;
+}
+
+.seven-col .sold_flag{
+    width: 8%;
+}
+
+.ordine-body{
+    border-radius: 0 0 4px 4px;
+    
+    /** DI DEFAULT è NASCOSTO **/
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.prodotto{
+    margin-bottom: 15px;
+}
+
+.prodotto img{
+    width: 90px;
+    height: 90px;
+}
+
+.prodotto .modello{
+    line-height: 90px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #0066c0;
+}
+
+.prodotto .modello:hover{
+    text-decoration: underline;
+    color: #c45500;
+}
+
+.prodotto .prezzo{
+    color: #B12704;
+}
+
+.ordine-body .three-col .column-layout{
+    width: 40%;
+    padding: 0 10px;
+}
+
+.ordine-body .three-col .column-layout:first-child{
+    width: 90px !important;
+}
+

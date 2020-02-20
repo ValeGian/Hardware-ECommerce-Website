@@ -1,0 +1,79 @@
+#my_account_link_list{
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+#my_account_link_list li{
+    padding-top: 20px;
+}
+
+#my_account_link_list li a{
+    text-decoration: none;
+    color: #3d3d3d;
+    display: block;
+    max-width: 45%;
+    font-size: 1em;
+    line-height: 32px;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #c7c7c7;
+    background-color: white;
+}
+
+#my_account_link_list li a div span, #logout_link div span{
+    display: block;
+    padding: 8px;
+    border-left: 1px solid #c7c7c7;
+    margin-left: 48px;
+}
+
+#my_account_link_list li a div::before{
+    width: 32px;
+    height: 32px;
+    float: left;
+    padding: 8px;
+}
+
+#my_account_link_list li a #user_list_element::before{
+    content: url(./../css/img/User-2.png);
+}
+
+#my_account_link_list li a #cart_list_element::before{
+    content: url(./../css/img/Cart-icon-2.png);
+}
+
+#my_account_link_list li a #list_list_element::before{
+    content: url(./../css/img/List.png);
+}
+
+/** LOGOUT LINK **/
+#logout_link{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 122px;
+    float: right;
+    font-size: 0.95em;
+    line-height: 24px;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: #f3515c;
+}
+
+#logout_link div span{
+    border: 0;
+    margin-left: 40px;
+}
+
+#logout_link div::before{
+    width: 24px;
+    height: 24px;
+    float: left;
+    padding: 8px;
+}
+
+#logout_element::before{
+    content: url(./../css/img/Logout-2.png);
+}

@@ -1,0 +1,20 @@
+.box{
+    max-width: 45%;
+}
+
+#mod_dati_E, #mod_dati_I{
+    background-color: #007ad1;
+    text-decoration: none;
+}
+
+#mod_dati_E{
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 639px){
+    
+    .box{
+        max-width: 100%;
+    }
+    
+}

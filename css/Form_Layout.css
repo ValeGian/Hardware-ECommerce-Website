@@ -1,0 +1,72 @@
+textarea{
+    height: auto !important;
+}
+
+.right-box{
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    width: auto !important;
+}
+
+.form-control{
+    width: 40%;
+}
+
+label sup{
+    font-size: 1.2em;
+    color: red;
+}
+
+.sub_btn{
+    padding: 10px 15px;
+    font-size: 1.0625em;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box span{
+    float: right;
+    color: #f13340;
+    margin: 20px 20px 0 0;
+} 
+
+#tipo_prodotto{
+    margin-bottom: 20px;
+}
+
+#Submit_New_Account{
+    background-color: #43b754;
+}
+
+#Submit_Prodotto{
+    background-color: #ad2222;
+}
+
+/** SORTING BAR **/
+.sorting_bar{
+    margin: 10px 0;
+}
+
+.sorting_bar label{
+    float: left;
+    color: #3d3d3d;
+    line-height: 35px;
+    margin: 0 8px 5px 10px;
+    font-weight: 400;
+}
+
+.sorting_bar select{
+    display: inline-block;
+    float: left;
+    width: auto;
+}
+
+.sorting_bar input[type='submit']{
+    height: 35px;
+    margin-left: 5px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
